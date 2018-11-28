@@ -25,36 +25,36 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
 
 <body>
 
-    <!-- Navigation -->
+<!-- Navigation -->
 
-    @include('layouts,partial,navigation')
-    @yield('content')
+@include('layouts.partials.navigation')
+@yield('content')
 
 
-    <!-- Footer -->
+<!-- Footer -->
 
-    @include('layouts,partial,footer')
+@include('layouts.partials.footer')
 
-    <!-- jQuery -->
-    <script src="{{asset('js/jquery.min.js')}}"></script>
+<!-- jQuery -->
+<script src="{{asset('js/jquery.min.js')}}"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{{asset('js/bootstrap.min.js')}}"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="{{asset('js/jqBootstrapValidation.js')}}"></script>
-    <script src="{{asset('js/contact_me.js')}}"></script>
+<!-- Contact Form JavaScript -->
+<script src="{{asset('js/jqBootstrapValidation.js')}}"></script>
+<script src="{{asset('js/contact_me.js')}}"></script>
 
-    <!-- Theme JavaScript -->
-    <script src="{{asset('js/clean-blog.min.js')}}"></script>
+<!-- Theme JavaScript -->
+<script src="{{asset('js/clean-blog.min.js')}}"></script>
 
 </body>
 
