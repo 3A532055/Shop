@@ -8,23 +8,27 @@
                 <span class="sr-only">Toggle navigation</span>
                 Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+            <a class="navbar-brand" href="http://localhost:8000">初始畫面</a>
+
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="{{route('posts.index')}}">Home</a>
+                    <a href="{{route('posts.index')}}">首頁</a>
                 </li>
                 <li>
-                    <a href="{{route('posts.about')}}">About</a>
+                    <a href="{{route('posts.show')}}">商店</a>
                 </li>
                 <li>
-                    <a href="{{route('posts.show')}}">Sample Post</a>
+                    <a href="{{route('posts.about')}}">關於我們</a>
                 </li>
                 <li>
-                    <a href="{{route('posts.contact')}}">Contact</a>
+                    <a href="{{route('posts.news')}}">消息</a>
+                </li>
+                <li>
+                    <a href="{{route('posts.contact')}}">聯絡我們</a>
                 </li>
             </ul>
         </div>

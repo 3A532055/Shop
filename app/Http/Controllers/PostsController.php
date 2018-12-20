@@ -15,8 +15,15 @@ class PostsController extends Controller
     public function show()
     {
         //
-        return view('post');
+        return view('shop');
     }
+
+    public function shows()
+    {
+        //
+        return view('vegetables');
+    }
+
     public function about()
     {
         //
@@ -26,6 +33,11 @@ class PostsController extends Controller
     {
         //
         return view('contact');
+    }
+    public function news()
+    {
+        //
+        return view('news');
     }
 
 }

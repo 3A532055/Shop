@@ -2,7 +2,7 @@
 
 @extends('layouts.master')
 
-@section('title', 'Clean Blog - About')
+@section('title', '生鮮比價系統')
 
 
     @section('content')
@@ -13,9 +13,9 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="page-heading">
-                        <h1>About Me</h1>
+                        <h1>關於我們</h1>
                         <hr class="small">
-                        <span class="subheading">This is what I do.</span>
+                        <span class="subheading">...........</span>
                     </div>
                 </div>
             </div>

@@ -16,6 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('posts', ['as' => 'posts.index',   'uses' => 'PostsController@index']);
-Route::get('post',  ['as' => 'posts.show',    'uses' => 'PostsController@show']);
+Route::get('shop',  ['as' => 'posts.show',    'uses' => 'PostsController@show']);
+Route::get('vegetables',  ['as' => 'posts.shows',    'uses' => 'PostsController@shows']);
 Route::get('about',    ['as' => 'posts.about',   'uses' => 'PostsController@about']);
 Route::get('contact',  ['as' => 'posts.contact', 'uses' => 'PostsController@contact']);
+Route::get('news',  ['as' => 'posts.news', 'uses' => 'PostsController@news']);

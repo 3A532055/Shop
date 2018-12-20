@@ -1,7 +1,7 @@
 
 @extends('layouts.master')
 
-@section('title', 'Clean Blog - Contact')
+@section('title', '生鮮比價系統')
 
 @section('content')
 
@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="page-heading">
-                        <h1>Contact Me</h1>
+                        <h1>聯絡我們</h1>
                         <hr class="small">
                         <span class="subheading">Have questions? I have answers (maybe).</span>
                     </div>
