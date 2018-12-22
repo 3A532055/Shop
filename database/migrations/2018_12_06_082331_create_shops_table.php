@@ -17,7 +17,7 @@ class CreateShopsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('phone');
-            $table->string('address');
+            $table->string('location');
             $table->timestamps();
             //$table->unsignedInteger();  外來鍵型態
         });
