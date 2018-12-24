@@ -15,7 +15,7 @@
             html, body {
                 background-color: #EEEEEE;
                 color: #ffffff;
-                font-family: 'Nunito', sans-serif;
+                font-family: 'DFKai-sb', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
@@ -84,10 +84,9 @@
 
                 <div class="links">
                     <a href="http://localhost:8000/posts">首頁</a>
-                    <a href="http://localhost:8000/shop">商店</a>
-                    <a href="http://localhost:8000/about">關於我們</a>
+                    <a href="http://localhost:8000/shop">所有商店</a>
+                    <a href="http://localhost:8000/vegetables">所有蔬菜</a>
                     <a href="http://localhost:8000/news">消息</a>
-                    <a href="http://localhost:8000/contact">聯絡我們</a>
                 </div>
             </div>
         </div>
