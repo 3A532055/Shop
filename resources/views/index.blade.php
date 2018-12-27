@@ -31,7 +31,7 @@
                             所有店家
                         </h2>
                         <h3 class="post-subtitle">
-                            ...................
+
                         </h3>
                     </a>
                     <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
@@ -43,7 +43,7 @@
                             所有蔬菜
                         </h2>
                         <h3 class="post-subtitle">
-                            ...................
+
                         </h3>
                     </a>
                     <p class="post-meta"> <a href="#"> </a> </p>
@@ -65,7 +65,7 @@
                             ..................
                         </h2>
                         <h3 class="post-subtitle">
-                            ...........................
+
                         </h3>
                     </a>
                     <p class="post-meta"> <a href="#"> </a>  </p>
