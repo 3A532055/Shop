@@ -27,7 +27,7 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
                 <div class="post-preview">
-                    <a href="{{route('posts.show')}}">
+                    <a href="{{route('posts.news')}}">
                         <h2 class="post-title">
                             國定假日
                         </h2>
@@ -41,7 +41,7 @@
                 <hr>
 
                 <div class="post-preview">
-                    <a href="post.html">
+                    <a href="{{route('posts.news')}}">
                         <h2 class="post-title">
                             全聯福利中心公告
                         </h2>

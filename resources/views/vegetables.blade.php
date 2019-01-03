@@ -11,10 +11,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading">
-                        <h1>所有蔬果</h1>
-                        <h2 class="subheading"></h2>
-                        <span class="meta"><a href="#"></span>
+                    <div class="site-heading">
+                        <h1>所有蔬菜</h1>
+                        <hr class="small">
+                        <span class="subheading"></span>
                     </div>
                 </div>
             </div>
@@ -24,71 +24,15 @@
     <!-- Main Content -->
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            高麗菜
-                        </h2>
-                        <h3 class="post-subtitle">
-                            
-                        </h3>
-                    </a>
-                    <p class="post-meta"><a href="#"></a></p>
-                </div>
-
-                <hr>
-
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            花椰菜
-                        </h2>
-                        <h3 class="post-subtitle">
-                            
-                        </h3>
-                    </a>
-                    <p class="post-meta"><a href="#"></a></p>
-                </div>
-
-                <hr>
-
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            空心菜
-                        </h2>
-                        <h3 class="post-subtitle">
-                            
-                        </h3>
-                    </a>
-                    <p class="post-meta"><a href="#"></a></p>
-                </div>
-
-                <hr>
-
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            小黃瓜
-                        </h2>
-                        <h3 class="post-subtitle">
-                            
-                        </h3>
-                    </a>
-                    <p class="post-meta"><a href="#"></a></p>
-                </div>
-
-                <hr>
-
-                <!-- Pager -->
-                <!--ul class="pager">
-                    <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
-                    </li>
-                </ul-->
-            </div>
+            @foreach($vegetables as $vegeshows)
+                    <div class="post-preview">
+                        <a href="{{$vegeshows -> name}}">
+                            <h2 class="post-title">{{$vegeshows -> name}}</h2>
+                            <h3 class="post-subtitle"></h3>
+                        </a>
+                        <p class="post-meta"><a href="#"></a></p>
+                    </div>
+            @endforeach
         </div>
     </div>
 @endsection

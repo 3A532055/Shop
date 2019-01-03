@@ -27,7 +27,7 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
                 <div class="post-preview">
-                    <a href="{{route('posts.show')}}">
+                    <a href="{{route('posts.shop')}}">
                         <h2 class="post-title">
                             所有店家
                         </h2>
@@ -41,7 +41,7 @@
                 <hr>
 
                 <div class="post-preview">
-                    <a href="{{route('posts.shows')}}">
+                    <a href="{{route('posts.vegetables')}}">
                         <h2 class="post-title">
                             所有蔬菜
                         </h2>

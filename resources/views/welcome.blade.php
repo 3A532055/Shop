@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="http://localhost:8000/posts">首頁</a>
+                    <a href="http://localhost:8000/index">首頁</a>
                     <a href="http://localhost:8000/shop">所有商店</a>
                     <a href="http://localhost:8000/vegetables">所有蔬菜</a>
                     <a href="http://localhost:8000/news">消息</a>
