@@ -21,11 +21,11 @@
                 </li>
 
                 <li>
-                    <a href="{{route('posts.show')}}">所有商店</a>
+                    <a href="{{route('posts.shop')}}">所有商店</a>
                 </li>
 
                 <li>
-                    <a href="{{route('posts.shows')}}">所有蔬菜</a>
+                    <a href="{{route('posts.vegetables')}}">所有蔬菜</a>
                 </li>
 
                 <li>

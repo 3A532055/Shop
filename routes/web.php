@@ -15,9 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('posts', ['as' => 'posts.index', 'uses' => 'PostsController@index']);
-Route::get('shop',  ['as' => 'posts.show', 'uses' => 'PostsController@show']);
-Route::get('vegetables',  ['as' => 'posts.shows', 'uses' => 'PostsController@shows']);
-Route::get('about',    ['as' => 'posts.about', 'uses' => 'PostsController@about']);
-Route::get('contact',  ['as' => 'posts.contact', 'uses' => 'PostsController@contact']);
-Route::get('news',  ['as' => 'posts.news', 'uses' => 'PostsController@news']);
+Route::get('/index', ['as' => 'posts.index', 'uses' => 'PostsController@index']);
+
+Route::get('/shop', ['as' => 'posts.shop', 'uses' => 'PostsController@shop']);
+Route::get('/vegetables',  ['as' => 'posts.vegetables', 'uses' => 'PostsController@vegetables']);
+
+Route::get('/news',  ['as' => 'posts.news', 'uses' => 'PostsController@news']);
