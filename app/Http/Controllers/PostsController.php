@@ -3,40 +3,37 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Vegetable;
+use App\Shop;
 
 class PostsController extends Controller
 {
 
-    public function index()
-    {
-        //
+    public function index(){
         return view('index');
     }
-    public function show()
-    {
-        //
-        return view('shop');
+
+    public function shop(){
+        $shopinfo=Shop::get();
+        $data=['shops'=>$shopinfo];
+        return view('shop',$data);
     }
 
-    public function shows()
-    {
-        //
-        return view('vegetables');
+    public function vegetables(){
+        $vegetableinfo=Vegetable::get();
+        $data=['vegetables'=>$vegetableinfo];
+        return view('vegetables',$data);
     }
 
-    public function about()
-    {
-        //
+    public function about(){
         return view('about');
     }
-    public function contact()
-    {
-        //
+
+    public function contact(){
         return view('contact');
     }
-    public function news()
-    {
-        //
+    
+    public function news(){
         return view('news');
     }
 
