@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>所有蔬菜</h1>
+                        <h1>{{$vegetables -> name}}</h1>
                         <hr class="small">
                         <span class="subheading"></span>
                     </div>
@@ -24,15 +24,16 @@
     <!-- Main Content -->
     <div class="container">
         <div class="row">
-            @foreach($vegetables as $vegeshows)
+    
+        @foreach($price as $showprice)
+            
                     <div class="post-preview">
-                        <a href="{{route('Show.Vegetable',$vegeshows->id)}}">
-                            <h2 class="post-title">{{$vegeshows -> name}}</h2>
-                            <h3 class="post-subtitle"></h3>
-                        </a>
+                            <h2 class="post-title"></h2>
+                            <h3 class="post-subtitle">{{$showprice -> price}}</h3>
                         <p class="post-meta"><a href="#"></a></p>
                     </div>
-            @endforeach
+               
+        @endforeach    
         </div>
     </div>
 @endsection
