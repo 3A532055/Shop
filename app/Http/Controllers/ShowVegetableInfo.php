@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Vegetable;
 use App\Price;
 use App\Shop;
+use DB;
 
 class ShowVegetableInfo extends Controller
 {
@@ -14,16 +15,15 @@ class ShowVegetableInfo extends Controller
         $vegetableinfo=Vegetable::where('id',$id)->first();
         $data=['vegetables'=>$vegetableinfo];
 
-        $pricedetail=Price::where('v_id',$id)->get();
-        $data2=['price'=>$pricedetail];
+        $info=DB::table('price')
+        ->join('shops','price.s_id','=','shops.id')
+        ->join('vegetables','price.v_id','=','vegetables.id')
+        ->where('v_id',$id)
+        ->select('shops.name','price')
+        ->get();
+        $data2=['price'=>$info];
 
-        $shop=Price::where('s_id',$id)->get();
-        $data3=['price'=>$shop];
-
-        $shopdetail=Shop::where('id',$data3)->get();
-        $data4=['shops'=>$shopdetail];
-
-        return view('vegetablesinfo',$data,$data2,$data3,$data4);
+        return view('vegetablesinfo',$data,$data2);
     }
 
     public function showprice(){

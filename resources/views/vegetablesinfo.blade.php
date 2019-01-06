@@ -24,16 +24,13 @@
     <!-- Main Content -->
     <div class="container">
         <div class="row">
-    
-        @foreach($price as $showprice)
-            
+        @foreach($price as $showinfo)
                     <div class="post-preview">
-                            <h2 class="post-title"></h2>
-                            <h3 class="post-subtitle">{{$showprice -> price}}</h3>
+                            <h2 class="post-title">{{$showinfo -> name}}</h2>
+                            <h3 class="post-subtitle">{{$showinfo-> price}}</h3>
                         <p class="post-meta"><a href="#"></a></p>
                     </div>
-               
-        @endforeach    
+        @endforeach            
         </div>
     </div>
 @endsection
