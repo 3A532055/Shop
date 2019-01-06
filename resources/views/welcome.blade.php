@@ -65,7 +65,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height" style="background-image: url('img/home1-bg.jpg')">
+        <div class="flex-center position-ref full-height" style="background-image: url('https://cummingstrengthandfitness.com/wp-content/uploads/2016/04/Fruits-And-Vegetables-1080x1920.jpg')">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
