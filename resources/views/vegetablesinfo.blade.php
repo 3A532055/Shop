@@ -27,7 +27,7 @@
         @foreach($price as $showinfo)
                     <div class="post-preview">
                             <h2 class="post-title">{{$showinfo -> name}}</h2>
-                            <h3 class="post-subtitle">{{$showinfo-> price}}</h3>
+                            <h3 class="post-subtitle">$ {{$showinfo-> price}}</h3>
                         <p class="post-meta"><a href="#"></a></p>
                     </div>
         @endforeach            
