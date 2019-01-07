@@ -34,7 +34,7 @@
                     </a>    
                     <i class="fa fa-map-marker ">
                     <tr class="post-meta">
-                    <a href="" target="_blank">
+                    <a href="https://www.google.com.tw/maps/place/{{$shopshow -> location}}" target="_blank">
                         {{$shopshow -> location}}</a></tr>
                     </i>
                     </div>
