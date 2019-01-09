@@ -28,9 +28,9 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-preview">
                         <h2 class="post-title">
-                            {{$showinfo -> name}} 
+                            {{$showinfo -> name}}
                         </h2>
-                        <h3 class="post-subtitle">{{$showinfo -> price}}</h3>  
+                        <h3 class="post-subtitle">$ {{$showinfo -> price}}</h3>
                     </div>
                 </div>
            @endforeach
